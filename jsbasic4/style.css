@@ -1,0 +1,16 @@
+
+/*ホバーで切り替え*/
+.js1{
+  color:red;
+}
+
+
+
+/*クリックして切り替え*/
+#elem3{
+  cursor: pointer;
+}
+
+.js2:active{
+  color:red;
+}
