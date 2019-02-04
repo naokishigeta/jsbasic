@@ -13,12 +13,13 @@ document.addEventListener('DOMContentLoaded',function(){
   })
 });
 
+//クラス名を追加して変更する方法
 document.addEventListener('DOMContentLoaded',function(){
   let elem2= document.getElementById('elem2');
   elem2.addEventListener('mouseover', function(){
 
     //クラス属性を発動
-    // elem2.className='js1';
+    // this.className='js1';
     //クラスリストでもできるよ
     elem2.classList.add('js1');
     //クラスリスト(toggle)を使うと発動していない時、removeもしてくれるよ
@@ -27,17 +28,46 @@ document.addEventListener('DOMContentLoaded',function(){
     elem2.addEventListener('mouseout',function(){
     elem2.classList.remove('js1');
     // elem2.className='';
-  });
+  })
 });
 
 // クリックしたときに色を変える
 
+// document.addEventListener('DOMContentLoaded',function(){
+//   let elem3= document.getElementById('elem3');
+//   elem3.addEventListener('click', function(){
+//   elem3.classList.add('js2');
+//   });
+// });
+
+// クリック屋慶名さんver.
 document.addEventListener('DOMContentLoaded',function(){
   let elem3= document.getElementById('elem3');
   elem3.addEventListener('click', function(){
-  elem3.classList.add('js2');
+  if(this.className==='blue'){
+    elem3.className='';
+  }else{elem3.className='blue';
+  }
   });
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
