@@ -3,13 +3,24 @@
 <head>
   <meta charset="utf-8">
   <title>TODO</title>
-  <link rel="stylesheet" type="text/css" href="../reset.css"> 
-  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/reset.css"> 
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 </head>
 <body>
+  <header>
+    <input type="text" id="task" placeholder="タスクを入力してください">
+    <i id="add" class="fab fa-apple fa-2x"></i>
+  </header>
 
-
-
+<main class="container">
+  <!-- 未完了のタスク -->
+  <h2 class="title">Not yet</h2>
+  <ul class="list" id="not-yet"></ul>
+  <!-- 完了タスク -->
+  <h2 class="title">Done</h2>
+  <ul class="list" id="done"></ul>
+</main>
 
 
 
