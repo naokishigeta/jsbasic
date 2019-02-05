@@ -58,6 +58,13 @@ document.addEventListener('DOMContentLoaded',function(){
 
 
 
+// 任意の文字列
+var str = 'banana, apple, orange, apple';
+ 
+// 「apple」を検索してみる
+var result = str.indexOf( 'apple' );
+ 
+console.dir('apple');
 
 
 
